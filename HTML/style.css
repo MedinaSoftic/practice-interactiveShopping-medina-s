@@ -12,3 +12,7 @@ li button {
     margin-left: 10px;
     border-color: red;
 }
+
+[changeText] {
+    outline: 1px solid #ccc; 
+}

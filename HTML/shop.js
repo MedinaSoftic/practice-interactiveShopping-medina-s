@@ -26,11 +26,15 @@ list.appendChild(itemList);
     };
 
     editButton.onclick = function() {
-        let updated = prompt("Edit item:", itemText.textContent);
-        if (updated !== null) {
-          itemText.textContent = updated;
+        if(editButton.textContent === "Edit"){
+            itemText.contentEditable = "true";
+            itemText.focus();
+            editButton.textContent = "Save";
+        }else{
+            itemText.contentEditable ="false";
+            editButton.textContent = "Edit";
         }
-      };
+    };
 
 input.focus();
 });
